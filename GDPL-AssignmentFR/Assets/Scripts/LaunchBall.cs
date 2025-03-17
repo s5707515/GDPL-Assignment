@@ -20,7 +20,7 @@ public class LaunchBall : MonoBehaviour
 
     private float elevation;
     private float rotation;
-
+    
     private bool inAir = false;
 
     private void Start()
