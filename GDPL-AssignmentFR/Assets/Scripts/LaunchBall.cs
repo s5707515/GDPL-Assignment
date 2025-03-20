@@ -18,6 +18,8 @@ public class LaunchBall : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private GameObject arrow;
 
+    private GameUI gameUIScript;
+
     private float elevation;
     private float rotation;
     
@@ -25,6 +27,8 @@ public class LaunchBall : MonoBehaviour
 
     private void Start()
     {
+        gameUIScript = GameObject.FindGameObjectWithTag("Canvas").GetComponent<GameUI>();
+
         //ENSURE ball is not moving at start
 
         rb.velocity = Vector3.zero;  
@@ -33,9 +37,9 @@ public class LaunchBall : MonoBehaviour
 
     private void Update()
     {
-        //Launch the ball when SPACE is pressed and ball has not already been launched
+        //Launch the ball when SPACE is pressed, the ball has not already been launched and the player still has shots left
 
-        if(Input.GetKeyDown(KeyCode.Space) && !inAir)
+        if(Input.GetKeyDown(KeyCode.Space) && !inAir && gameUIScript.GetShotsLeft() > 0)
         {
             arrow.SetActive(false); // Remove trajectory arrow
 
@@ -43,6 +47,8 @@ public class LaunchBall : MonoBehaviour
             rb.velocity =  transform.forward * power;
 
             inAir = true;
+
+            gameUIScript.ChangeShots(-1);
         }
 
         //Chnage angle of launch by pressing A and D
