@@ -42,6 +42,7 @@ public class GameUI : MonoBehaviour
         rotationText.text = "R: " + launchBallScript.GetRotation();
         elevationText.text = "E: " + launchBallScript.GetElevation();
         enemiesRemainingText.text = "Enemies Remaining: " + gameManagerScript.GetRemainingEnemies(); 
+
     }
     public void IncrementScore(int _score)
     {
