@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - Canvas
+  - Enemy
   layers:
   - Default
   - TransparentFX

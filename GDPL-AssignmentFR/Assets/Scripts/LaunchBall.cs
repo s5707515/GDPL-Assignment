@@ -20,6 +20,9 @@ public class LaunchBall : MonoBehaviour
 
     private GameUI gameUIScript;
 
+    private float yTilt;
+    private float zTilt;
+
     private float elevation;
     private float rotation;
     
@@ -43,8 +46,8 @@ public class LaunchBall : MonoBehaviour
         {
             arrow.SetActive(false); // Remove trajectory arrow
 
-            
-            rb.velocity =  transform.forward * power;
+
+            rb.velocity = -transform.right * power;
 
             inAir = true;
 
@@ -53,37 +56,69 @@ public class LaunchBall : MonoBehaviour
 
         //Chnage angle of launch by pressing A and D
 
-        rotation = Input.GetAxis("Horizontal") * rotationSpeed * 10  * Time.deltaTime;
 
 
+        yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 10  * Time.deltaTime;
+       
         //Change Elevation of the ball by pressing W and S
 
-        elevation = Input.GetAxis("Vertical") * rotationSpeed * 10 * Time.deltaTime;
+        zTilt = Input.GetAxis("Vertical") * rotationSpeed * 10 * Time.deltaTime;
 
 
         if(gameObject.transform.position.y < -20 ) // Respawn ball if it falls off the map
         {
-            RespawnBall();
+            StartCoroutine(RespawnBall(0));
         }
     }
 
     private void LateUpdate()
     {
+        
+        //Lock rotation of object accordingly
+
+        rotation = Mathf.Clamp(rotation + yTilt, -90, 90);
+        elevation = Mathf.Clamp(elevation + zTilt, -90, 0);
+
         //Change rotation of object
 
-        transform.Rotate(elevation, rotation, 0);
+        transform.rotation = Quaternion.Euler(0, rotation, elevation);
     }
 
-    public void RespawnBall() //Sends the ball back to it's spawnpoint
+
+    IEnumerator RespawnBall(int delay) //Sends the ball back to it's spawnpoint after a specific amount of time
     {
+        yield return new WaitForSeconds(delay);
+
         rb.isKinematic = true;
 
+        //Reset transform properties
+
         gameObject.transform.position = spawnPos.position;
-        gameObject.transform.rotation = Quaternion.Euler(0, -90, 0);
+        gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        rotation = 0;
+        elevation = 0;
 
         inAir = false;
         arrow.SetActive(true);
         rb.isKinematic = false;
+    }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            StartCoroutine(RespawnBall(1));
+        }
+    }
+
+    public int GetRotation()
+    {
+        return (int)rotation;
+    }
+
+    public int GetElevation()
+    {
+        return Mathf.Abs((int)elevation);
     }
 }
+
