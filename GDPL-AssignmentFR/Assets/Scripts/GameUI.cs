@@ -22,7 +22,6 @@ public class GameUI : MonoBehaviour
     [Header("Attributes")]
 
     [SerializeField] private int score;
-    [SerializeField] private int shotsLeft;
 
     private LaunchBall launchBallScript;
     private GameManager gameManagerScript;
@@ -31,31 +30,18 @@ public class GameUI : MonoBehaviour
     {
         launchBallScript = GameObject.FindGameObjectWithTag("Ball").GetComponent<LaunchBall>(); 
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        shotsLeft = 10;
     }
     public void Update()
     {
-        scoreTxt.text = "Score: " + score;
+        scoreTxt.text = "Score: " + gameManagerScript.GetScore();
 
-        shotsLeftTxt.text = "Shots Left: " + shotsLeft;
+        shotsLeftTxt.text = "Shots Left: " + gameManagerScript.GetShotsLeft();
 
         rotationText.text = "R: " + launchBallScript.GetRotation();
         elevationText.text = "E: " + launchBallScript.GetElevation();
         enemiesRemainingText.text = "Enemies Remaining: " + gameManagerScript.GetRemainingEnemies(); 
 
     }
-    public void IncrementScore(int _score)
-    {
-        score += _score;
-    }
+   
 
-    public void ChangeShots(int _shotsleft)
-    {
-        shotsLeft += _shotsleft;
-    }
-
-    public int GetShotsLeft()
-    {
-        return shotsLeft;
-    }
 }

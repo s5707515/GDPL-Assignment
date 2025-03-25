@@ -6,16 +6,16 @@ public class GiveShotsOnDefeat : MonoBehaviour
 {
     [SerializeField] private int numberOfShots;
 
-    private GameUI gameUIScript;
+    private GameManager gameManagerScript;
 
     void Start()
     {
-        gameUIScript = GameObject.FindGameObjectWithTag("Canvas").GetComponent<GameUI>();
+        gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     private void OnDestroy() //Give the player more ammo when the object is destroyed
     {
-        gameUIScript.ChangeShots(numberOfShots);
+        gameManagerScript.ChangeShots(numberOfShots);
     }
 
 }

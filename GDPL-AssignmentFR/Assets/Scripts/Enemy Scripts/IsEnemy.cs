@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class IsEnemy : MonoBehaviour
 {
-    [SerializeField] private int score = 1;
+    [SerializeField] protected int score = 1;
 
-    [SerializeField] private GameObject smokeEffectPrefab;
+    [SerializeField] protected GameObject smokeEffectPrefab;
 
-    private GameUI gameUIScript;
+    protected GameManager gameManagerScript;
 
-    private bool quitting = false;
+    protected bool quitting = false;
 
-    private void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
@@ -22,11 +22,11 @@ public class IsEnemy : MonoBehaviour
 
     private void Start()
     {
-        gameUIScript = GameObject.FindGameObjectWithTag("Canvas").GetComponent<GameUI>();
+        gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
 
-    private void OnDestroy()
+    protected virtual void OnDestroy()
     {
         if(!quitting)
         {
@@ -34,14 +34,14 @@ public class IsEnemy : MonoBehaviour
             Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
 
             //Increment score
-            gameUIScript.IncrementScore(score);
+            gameManagerScript.IncrementScore(score);
         }
        
 
         Debug.Log("Object Destroyed");
     }
 
-    private void OnApplicationQuit()
+    protected void OnApplicationQuit()
     {
         quitting = true;
     }
