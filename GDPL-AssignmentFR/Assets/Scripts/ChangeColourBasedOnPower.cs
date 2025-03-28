@@ -8,7 +8,11 @@ public class ChangeColourBasedOnPower : MonoBehaviour
 
     public float transition;
 
-    [SerializeField] private Material mat;
+    [SerializeField] public Material mat;
+
+    public Color lowColour;
+
+    public Color highColour;
 
 
 
@@ -16,18 +20,16 @@ public class ChangeColourBasedOnPower : MonoBehaviour
     void Start()
     {
         launchBallScript = GameObject.FindGameObjectWithTag("Ball").GetComponent<LaunchBall>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        transition = (float)launchBallScript.GetPower() / (float)launchBallScript.GetMaxPower();
+        transition = Mathf.Clamp01((float)launchBallScript.GetPower() / (float)launchBallScript.GetMaxPower());
 
-        
-    }
+        mat.color = Color.Lerp(lowColour , highColour, transition);
 
-    private void LateUpdate()
-    {
-        mat.color = Color.Lerp(new Color(255, 255, 0), new Color(255, 0, 0), transition);
     }
 }
+
