@@ -2577,7 +2577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f763f5b75356b9e47bb98e25e00be6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 10
+  power: 0
   maxPower: 50
   rotationSpeed: 15
   spawnPos: {fileID: 259753229}
@@ -9902,6 +9902,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: 0
   mat: {fileID: 2100000, guid: 83b8b3d1efd5fb54b9ab26f09fccefe4, type: 2}
+  lowColour: {r: 1, g: 0.99999994, b: 0, a: 1}
+  highColour: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1841365007
 GameObject:
   m_ObjectHideFlags: 0
