@@ -7,8 +7,12 @@ public class LaunchBall : MonoBehaviour
 {
     [Header("Ball Attributes")]
 
+   
     [SerializeField] private float power;
 
+    
+
+   
     [SerializeField] private float maxPower;
     
    
@@ -21,6 +25,16 @@ public class LaunchBall : MonoBehaviour
     [SerializeField] private GameObject arrow;
 
     private GameManager gameManagerScript;
+    private GameUI UIscript;
+
+   
+
+    [Header("Time")]
+
+    [SerializeField] private float timeSinceLaunch;
+
+    [SerializeField] private float maxLaunchTime = 10f;
+
 
     private float yTilt;
     private float zTilt;
@@ -28,12 +42,15 @@ public class LaunchBall : MonoBehaviour
 
     private float elevation;
     private float rotation;
-    
+
     private bool inAir = false;
+
 
     private void Start()
     {
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        UIscript = GameObject.FindGameObjectWithTag("Canvas").GetComponent<GameUI>();
 
         //ENSURE ball is not moving at start
 
@@ -45,7 +62,7 @@ public class LaunchBall : MonoBehaviour
     {
         //Launch the ball when SPACE is pressed, the ball has not already been launched and the player still has shots left
 
-        if(Input.GetKeyDown(KeyCode.Space) && !inAir && gameManagerScript.GetShotsLeft() > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && !inAir && gameManagerScript.GetShotsLeft() > 0)
         {
             arrow.SetActive(false); // Remove trajectory arrow
 
@@ -55,27 +72,45 @@ public class LaunchBall : MonoBehaviour
             inAir = true;
 
             gameManagerScript.ChangeShots(-1);
+            UIscript.ToggleTimeImage(true);
+
         }
 
-        //Chnage angle of launch by pressing A and D
+        //Increment the launch time whilst in the air
 
-        yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 10  * Time.deltaTime;
-       
+        if (inAir)
+        {
+            timeSinceLaunch += Time.deltaTime;
+        }
+
+        //Respawn ball when it reaches time limit
+
+        if (timeSinceLaunch > maxLaunchTime)
+        {
+            RespawnBall();
+        }
+
+
+        //Change angle of launch by pressing A and D
+
+        yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 10 * Time.deltaTime;
+
         //Change Elevation of the ball by pressing W and S
 
         zTilt = Input.GetAxis("Vertical") * rotationSpeed * 10 * Time.deltaTime;
 
 
-        if(gameObject.transform.position.y < -20 ) // Respawn ball if it falls off the map
-        {
-            StartCoroutine(RespawnBall(0));
-        }
-
-
         //Change power of the ball using scroll wheel
 
         powerChange = Input.GetAxis("Mouse ScrollWheel") * 10;
+
+        if (gameObject.transform.position.y < -20) // Respawn ball if it falls off the map
+        {
+            RespawnBall();
+        }
     }
+
+   
 
     private void LateUpdate()
     {
@@ -84,18 +119,20 @@ public class LaunchBall : MonoBehaviour
 
         rotation = Mathf.Clamp(rotation + yTilt, -90, 90);
         elevation = Mathf.Clamp(elevation + zTilt, -90, 0);
-        power = Mathf.Clamp(power + powerChange, 0, maxPower);
+        
 
         //Change rotation of object
 
         transform.rotation = Quaternion.Euler(0, rotation, elevation);
+
+        //Change power of object
+
+        power = Mathf.Clamp(power + powerChange, 0, maxPower);
     }
 
-
-    IEnumerator RespawnBall(int delay) //Sends the ball back to it's spawnpoint after a specific amount of time
+    
+    public void RespawnBall() //Sends the ball back to it's spawnpoint after a specific amount of time
     {
-        yield return new WaitForSeconds(delay);
-
         rb.isKinematic = true;
 
         //Reset transform properties
@@ -105,16 +142,29 @@ public class LaunchBall : MonoBehaviour
         rotation = 0;
         elevation = 0;
 
+        timeSinceLaunch = 0;
         inAir = false;
         arrow.SetActive(true);
+
         rb.isKinematic = false;
+
+        UIscript.ToggleTimeImage(false);
     }
+
+
+
+
+
+
+
+
+
 
     public void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            StartCoroutine(RespawnBall(1));
+            RespawnBall();
         }
     }
 
@@ -138,6 +188,11 @@ public class LaunchBall : MonoBehaviour
     public float GetMaxPower()
     {
         return maxPower;
+    }
+
+    public float GetTimeSinceLaunch()
+    {
+        return Mathf.Round(timeSinceLaunch * 10) * 0.1f;
     }
 }
 

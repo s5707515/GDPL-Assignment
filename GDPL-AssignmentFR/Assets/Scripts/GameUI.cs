@@ -21,12 +21,18 @@ public class GameUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI enemiesRemainingText;
 
+    [SerializeField] private TextMeshProUGUI timeSinceLaunchText;
+
+    [SerializeField] private Image timeImage;
+
     [Header("Attributes")]
 
     [SerializeField] private int score;
 
     private LaunchBall launchBallScript;
     private GameManager gameManagerScript;
+
+    bool showTime;
 
     public void Start()
     {
@@ -43,8 +49,16 @@ public class GameUI : MonoBehaviour
         elevationText.text = "E: " + launchBallScript.GetElevation();
         powerText.text = "P: " + launchBallScript.GetPower();
 
-        enemiesRemainingText.text = "Enemies Remaining: " + gameManagerScript.GetRemainingEnemies(); 
+        enemiesRemainingText.text = "Enemies Remaining: " + gameManagerScript.GetRemainingEnemies();
 
+        
+        timeSinceLaunchText.text = launchBallScript.GetTimeSinceLaunch().ToString();
+
+    }
+
+    public void ToggleTimeImage(bool activityLevel)
+    {
+        timeImage.gameObject.SetActive(activityLevel);
     }
    
 
