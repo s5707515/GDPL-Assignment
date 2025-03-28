@@ -8,6 +8,8 @@ public class LaunchBall : MonoBehaviour
     [Header("Ball Attributes")]
 
     [SerializeField] private float power;
+
+    [SerializeField] private float maxPower;
     
    
     [SerializeField] private float rotationSpeed;
@@ -22,6 +24,7 @@ public class LaunchBall : MonoBehaviour
 
     private float yTilt;
     private float zTilt;
+    private float powerChange;
 
     private float elevation;
     private float rotation;
@@ -56,8 +59,6 @@ public class LaunchBall : MonoBehaviour
 
         //Chnage angle of launch by pressing A and D
 
-
-
         yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 10  * Time.deltaTime;
        
         //Change Elevation of the ball by pressing W and S
@@ -69,6 +70,11 @@ public class LaunchBall : MonoBehaviour
         {
             StartCoroutine(RespawnBall(0));
         }
+
+
+        //Change power of the ball using scroll wheel
+
+        powerChange = Input.GetAxis("Mouse ScrollWheel") * 10;
     }
 
     private void LateUpdate()
@@ -78,6 +84,7 @@ public class LaunchBall : MonoBehaviour
 
         rotation = Mathf.Clamp(rotation + yTilt, -90, 90);
         elevation = Mathf.Clamp(elevation + zTilt, -90, 0);
+        power = Mathf.Clamp(power + powerChange, 0, maxPower);
 
         //Change rotation of object
 
@@ -119,6 +126,18 @@ public class LaunchBall : MonoBehaviour
     public int GetElevation()
     {
         return Mathf.Abs((int)elevation);
+    }
+
+    public int GetPower()
+    {
+        //Return power to 1dp
+
+        return (int)power;
+    }
+
+    public float GetMaxPower()
+    {
+        return maxPower;
     }
 }
 

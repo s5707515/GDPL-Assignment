@@ -17,6 +17,8 @@ public class GameUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI elevationText;
 
+    [SerializeField] private TextMeshProUGUI powerText;
+
     [SerializeField] private TextMeshProUGUI enemiesRemainingText;
 
     [Header("Attributes")]
@@ -39,6 +41,8 @@ public class GameUI : MonoBehaviour
 
         rotationText.text = "R: " + launchBallScript.GetRotation();
         elevationText.text = "E: " + launchBallScript.GetElevation();
+        powerText.text = "P: " + launchBallScript.GetPower();
+
         enemiesRemainingText.text = "Enemies Remaining: " + gameManagerScript.GetRemainingEnemies(); 
 
     }
