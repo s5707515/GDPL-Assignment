@@ -149,7 +149,12 @@ public class LaunchBall : MonoBehaviour
         rb.isKinematic = false;
 
         UIscript.ToggleTimeImage(false);
+
+        StartCoroutine(gameManagerScript.CheckForWinOrLose(0.1f));
+
     }
+
+   
 
 
 

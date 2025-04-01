@@ -25,6 +25,10 @@ public class GameUI : MonoBehaviour
 
     [SerializeField] private Image timeImage;
 
+    [SerializeField] private GameObject gameOverScreenHolder;
+
+    [SerializeField] private TextMeshProUGUI gameOverText;
+
     [Header("Attributes")]
 
     [SerializeField] private int score;
@@ -38,9 +42,13 @@ public class GameUI : MonoBehaviour
     {
         launchBallScript = GameObject.FindGameObjectWithTag("Ball").GetComponent<LaunchBall>(); 
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        gameOverScreenHolder.SetActive(false);
     }
     public void Update()
     {
+        //Update textMeshPros in real time
+
         scoreTxt.text = "Score: " + gameManagerScript.GetScore();
 
         shotsLeftTxt.text = "Shots Left: " + gameManagerScript.GetShotsLeft();
@@ -54,7 +62,27 @@ public class GameUI : MonoBehaviour
         
         timeSinceLaunchText.text = launchBallScript.GetTimeSinceLaunch().ToString();
 
+        //Display Gameover screen on DEFEAT
+
+        if (gameManagerScript.GetLose())
+        {
+            gameOverScreenHolder.SetActive(true);
+            gameOverText.text = "Game Over!";
+        }
+
+
+        //Display Gameover screen on VICTORY
+
+        if (gameManagerScript.GetWin())
+        {
+            gameOverScreenHolder.SetActive(true);
+            gameOverText.text = "You Win!";
+        }
+
+
     }
+
+ 
 
     public void ToggleTimeImage(bool activityLevel)
     {

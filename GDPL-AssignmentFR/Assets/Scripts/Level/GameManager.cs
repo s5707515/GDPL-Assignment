@@ -8,11 +8,15 @@ public class GameManager : MonoBehaviour
 {
     //store enemies in world, player shots and score here
 
-    private int enemiesLeft;
+    private int enemiesLeft = 10;
 
     [SerializeField] private int shotsLeft;
 
     private int score = 0;
+
+    private bool lose = false;
+
+    private bool win = false;
 
     private void Start()
     {
@@ -23,7 +27,11 @@ public class GameManager : MonoBehaviour
         //Constantly work out how many enemy GameObjects are in the world
 
         enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy").Length;
+       
+
     }
+   
+
 
     public int GetRemainingEnemies() 
     {
@@ -48,5 +56,37 @@ public class GameManager : MonoBehaviour
     public int GetScore()
     {
         return score;
+    }
+
+  
+    public bool GetLose()
+    {
+        return lose;
+    }    
+
+    public bool GetWin()
+    {
+        return win;
+    }
+
+    public IEnumerator CheckForWinOrLose(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (enemiesLeft == 0)
+        {
+            win = true;
+
+            Debug.Log("Time to win!");
+        }
+        else
+        {
+            if (shotsLeft == 0)
+            {
+                lose = true;
+
+                Debug.Log("You Lose!");
+            }
+        }
     }
 }
