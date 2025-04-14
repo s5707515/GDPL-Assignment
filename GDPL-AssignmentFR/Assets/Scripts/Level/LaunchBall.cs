@@ -46,6 +46,10 @@ public class LaunchBall : MonoBehaviour
     private bool inAir = false;
 
 
+    [Header("Explosion Stuff")]
+
+    [SerializeField] private float collisionMultiplier = 100;
+
     private void Start()
     {
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -154,20 +158,12 @@ public class LaunchBall : MonoBehaviour
 
     }
 
-   
-
-
-
-
-
-
-
-
-
 
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))
+        GameObject other = collision.gameObject;
+
+        if(other.CompareTag("Enemy"))
         {
             RespawnBall();
         }
