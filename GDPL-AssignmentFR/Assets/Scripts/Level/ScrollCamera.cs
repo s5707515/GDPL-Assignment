@@ -11,6 +11,9 @@ public class ScrollCamera : MonoBehaviour
 
     [SerializeField] float FOV;
 
+    [SerializeField] float minFOV = 30;
+    [SerializeField] float maxFOV = 120;
+
     bool shiftUp = true;
 
     private void Update()
@@ -28,10 +31,10 @@ public class ScrollCamera : MonoBehaviour
         }
 
        
-        if (shiftUp)
+        if (shiftUp) //Change FOV based on Mouse Scrollwheel movement
         {
             FOV = freeLookCam.m_Lens.FieldOfView;
-            freeLookCam.m_Lens.FieldOfView = Mathf.Clamp(FOV + Input.GetAxis("Mouse ScrollWheel") * scrollSpeed, 30, 120);
+            freeLookCam.m_Lens.FieldOfView = Mathf.Clamp(FOV - Input.GetAxis("Mouse ScrollWheel") * scrollSpeed, minFOV, maxFOV);
         }
 
     }
