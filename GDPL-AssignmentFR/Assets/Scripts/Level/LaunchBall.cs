@@ -45,6 +45,9 @@ public class LaunchBall : MonoBehaviour
 
     private bool inAir = false;
 
+    private bool shiftDown = false;
+    
+
 
     [Header("Explosion Stuff")]
 
@@ -104,9 +107,23 @@ public class LaunchBall : MonoBehaviour
         zTilt = Input.GetAxis("Vertical") * rotationSpeed * 10 * Time.deltaTime;
 
 
-        //Change power of the ball using scroll wheel
+        //Change power of the ball using SHIFT scroll wheel
 
-        powerChange = Input.GetAxis("Mouse ScrollWheel") * 10;
+        if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        {
+            shiftDown = true;
+        }
+        
+        if(Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            shiftDown = false;
+        }
+
+        if (shiftDown)
+        {
+            powerChange = Input.GetAxis("Mouse ScrollWheel") * 10;
+        }
+        
 
         if (gameObject.transform.position.y < -20) // Respawn ball if it falls off the map
         {
