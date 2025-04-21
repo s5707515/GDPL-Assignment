@@ -18,9 +18,28 @@ public class GameManager : MonoBehaviour
 
     private bool win = false;
 
+    [Header("Layout Spawnpoints")]
+
+    [SerializeField] private Transform[] layoutSpawns;
+
+    [Header("Layouts")]
+
+    [SerializeField] private GameObject[] layouts;
+
+
+
     private void Start()
     {
         shotsLeft = 10;
+
+        //Load layouts on Island
+
+        for(int count = 0; count < layoutSpawns.Length; count++)
+        {
+            int rng = Random.Range(0, layouts.Length);
+
+            Instantiate(layouts[rng], layoutSpawns[count].position, layoutSpawns[count].rotation);
+        }
     }
     private void Update()
     {
