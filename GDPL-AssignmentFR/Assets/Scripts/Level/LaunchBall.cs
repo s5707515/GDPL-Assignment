@@ -100,11 +100,11 @@ public class LaunchBall : MonoBehaviour
 
         //Change angle of launch by pressing A and D
 
-        yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 10 * Time.deltaTime;
+        yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 5 * Time.deltaTime;
 
         //Change Elevation of the ball by pressing W and S
 
-        zTilt = Input.GetAxis("Vertical") * rotationSpeed * 10 * Time.deltaTime;
+        zTilt = Input.GetAxis("Vertical") * rotationSpeed * 5 * Time.deltaTime;
 
 
         //Change power of the ball using SHIFT scroll wheel
@@ -122,12 +122,6 @@ public class LaunchBall : MonoBehaviour
         if (shiftDown)
         {
             powerChange = Input.GetAxis("Mouse ScrollWheel") * 10;
-        }
-        
-
-        if (gameObject.transform.position.y < -20) // Respawn ball if it falls off the map
-        {
-            RespawnBall();
         }
     }
 
