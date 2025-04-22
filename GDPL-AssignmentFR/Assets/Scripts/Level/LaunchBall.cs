@@ -210,7 +210,7 @@ public class LaunchBall : MonoBehaviour
 
     public float GetTimeSinceLaunch()
     {
-        return Mathf.Round(timeSinceLaunch * 10) * 0.1f;
+        return Mathf.Round(timeSinceLaunch * 10f) / 10f;
     }
 }
 

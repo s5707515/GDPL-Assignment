@@ -7,6 +7,8 @@ public class isDecoration : MonoBehaviour
 {
     private Rigidbody rb;
 
+    [SerializeField] private float minForce = 1.0f;
+
 
     void Start()
     {
@@ -16,7 +18,7 @@ public class isDecoration : MonoBehaviour
     {
         //Check if the object has been affected by a force and apply gravity to it
 
-        if(rb.velocity.magnitude > 0.1f)
+        if(rb.velocity.magnitude > minForce)
         {
             rb.useGravity = true;
 
