@@ -23,6 +23,8 @@ public class IsEnemy : MonoBehaviour
     private void Start()
     {
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+       
     }
 
 

@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301122393685305429}
   m_Layer: 0
-  m_Name: WizardEnemyHolder
+  m_Name: Wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,9 +128,9 @@ GameObject:
   - component: {fileID: 2169157372127104821}
   - component: {fileID: 1219047332269708219}
   - component: {fileID: 5308791163380733064}
-  - component: {fileID: 6903825587892293506}
   - component: {fileID: 6951346406868796137}
   - component: {fileID: 717768514886264458}
+  - component: {fileID: 2875964368840583667}
   m_Layer: 0
   m_Name: WizardEnemy
   m_TagString: Enemy
@@ -205,29 +205,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6903825587892293506
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7231340239618152481}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6951346406868796137
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -236,7 +213,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7231340239618152481}
   serializedVersion: 4
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -271,6 +248,27 @@ MonoBehaviour:
   smokeEffectPrefab: {fileID: 6086498306077068672, guid: f51e23573c162fa43813c189424a52a9, type: 3}
   tpSpot: {fileID: 3941863564533990764}
   wizardSmoke: {fileID: 3660022282152467, guid: 60188d604ed2d244d9b453af55386fab, type: 3}
+--- !u!65 &2875964368840583667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7231340239618152481}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8195924447971953672
 GameObject:
   m_ObjectHideFlags: 0
