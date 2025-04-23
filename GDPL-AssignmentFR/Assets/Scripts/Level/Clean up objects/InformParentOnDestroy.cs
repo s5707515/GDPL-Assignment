@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InformParentOnDestroy : MonoBehaviour
 {
+
     bool quitting = false;
 
     private void Start()
@@ -23,4 +24,6 @@ public class InformParentOnDestroy : MonoBehaviour
     {
         quitting = true;
     }
+
+    
 }
