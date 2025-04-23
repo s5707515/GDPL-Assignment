@@ -153,5 +153,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brokenVersion: {fileID: 4399596873832058020, guid: 4f58663d2d801f34f98328ec96eb7e39, type: 3}
   breakForce: 8
-  collisionMultiplier: 75
+  collisionMultiplier: 100
   isBroken: 0

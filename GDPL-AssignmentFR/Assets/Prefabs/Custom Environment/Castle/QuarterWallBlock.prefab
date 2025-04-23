@@ -148,5 +148,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brokenVersion: {fileID: 8287699278643371057, guid: 747d02f96a6ed034dbf1edab2d65620e, type: 3}
   breakForce: 6
-  collisionMultiplier: 50
+  collisionMultiplier: 75
   isBroken: 0

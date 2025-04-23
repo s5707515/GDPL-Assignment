@@ -8,7 +8,10 @@ public class IsEnemy : MonoBehaviour
 
     [SerializeField] protected GameObject smokeEffectPrefab;
 
+    [SerializeField] private float getUpSpeed = 5.0f;
+
     protected GameManager gameManagerScript;
+
 
     protected bool quitting = false;
 
@@ -24,8 +27,8 @@ public class IsEnemy : MonoBehaviour
     {
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
-       
     }
+    
 
 
     protected virtual void OnDestroy()

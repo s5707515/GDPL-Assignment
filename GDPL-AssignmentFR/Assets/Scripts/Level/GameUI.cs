@@ -7,7 +7,9 @@ using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
-    [Header("Canvas References")]
+    [Header("Play UI References")]
+
+    [SerializeField] private GameObject playUI;
 
     [SerializeField] private TextMeshProUGUI scoreTxt;
 
@@ -25,9 +27,13 @@ public class GameUI : MonoBehaviour
 
     [SerializeField] private Image timeImage;
 
+    [Header("Game Over Screen UI References")]
+
     [SerializeField] private GameObject gameOverScreenHolder;
 
     [SerializeField] private TextMeshProUGUI gameOverText;
+
+    [SerializeField] private TextMeshProUGUI gameOverScore;
 
     [Header("Attributes")]
 
@@ -44,6 +50,7 @@ public class GameUI : MonoBehaviour
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         gameOverScreenHolder.SetActive(false);
+        playUI.SetActive(true);
     }
     public void Update()
     {
@@ -66,7 +73,10 @@ public class GameUI : MonoBehaviour
 
         if (gameManagerScript.GetLose())
         {
+            playUI.SetActive(false);
             gameOverScreenHolder.SetActive(true);
+
+            gameOverScore.text = scoreTxt.text;
             gameOverText.text = "Game Over!";
         }
 
@@ -75,7 +85,11 @@ public class GameUI : MonoBehaviour
 
         if (gameManagerScript.GetWin())
         {
+            playUI.SetActive(false);
             gameOverScreenHolder.SetActive(true);
+
+            gameOverScore.text = scoreTxt.text;
+
             gameOverText.text = "You Win!";
         }
 
