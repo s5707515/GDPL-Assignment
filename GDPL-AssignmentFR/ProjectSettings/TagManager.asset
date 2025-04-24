@@ -10,6 +10,7 @@ TagManager:
   - GameManager
   - Floating
   - Immovable
+  - Cannon
   layers:
   - Default
   - TransparentFX

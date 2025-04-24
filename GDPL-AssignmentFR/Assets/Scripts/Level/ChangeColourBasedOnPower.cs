@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChangeColourBasedOnPower : MonoBehaviour
 {
-    private LaunchBall launchBallScript;
+    private AimCannon cannonScript;
 
     public float transition;
 
@@ -19,14 +19,14 @@ public class ChangeColourBasedOnPower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        launchBallScript = GameObject.FindGameObjectWithTag("Ball").GetComponent<LaunchBall>();
+        cannonScript = GameObject.FindGameObjectWithTag("Cannon").GetComponent<AimCannon>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        transition = Mathf.Clamp01((float)launchBallScript.GetPower() / (float)launchBallScript.GetMaxPower());
+        transition = Mathf.Clamp01((float)cannonScript.GetPower() / (float)cannonScript.GetMaxPower());
 
         mat.color = Color.Lerp(lowColour , highColour, transition);
 

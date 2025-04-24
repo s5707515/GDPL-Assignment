@@ -14,7 +14,7 @@ public class DestroyFallingObjects : MonoBehaviour
         }
         else
         {
-            launchBallScript.RespawnBall();
+            launchBallScript.HideBall();
         }
     }
 

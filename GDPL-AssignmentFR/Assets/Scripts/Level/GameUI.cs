@@ -39,14 +39,14 @@ public class GameUI : MonoBehaviour
 
     [SerializeField] private int score;
 
-    private LaunchBall launchBallScript;
+    private AimCannon cannonScript;
     private GameManager gameManagerScript;
 
     bool showTime;
 
     public void Start()
     {
-        launchBallScript = GameObject.FindGameObjectWithTag("Ball").GetComponent<LaunchBall>(); 
+        cannonScript = GameObject.FindGameObjectWithTag("Cannon").GetComponent<AimCannon>(); 
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         gameOverScreenHolder.SetActive(false);
@@ -60,14 +60,14 @@ public class GameUI : MonoBehaviour
 
         shotsLeftTxt.text = "Shots Left: " + gameManagerScript.GetShotsLeft();
 
-        rotationText.text = "R: " + launchBallScript.GetRotation();
-        elevationText.text = "E: " + launchBallScript.GetElevation();
-        powerText.text = "P: " + launchBallScript.GetPower();
+        rotationText.text = "R: " + cannonScript.GetRotation();
+        elevationText.text = "E: " + cannonScript.GetElevation();
+        powerText.text = "P: " + cannonScript.GetPower();
 
         enemiesRemainingText.text = "Enemies Remaining: " + gameManagerScript.GetRemainingEnemies();
 
         
-        timeSinceLaunchText.text = launchBallScript.GetTimeSinceLaunch().ToString();
+        timeSinceLaunchText.text = cannonScript.GetTimeSinceLaunch().ToString();
 
         //Display Gameover screen on DEFEAT
 
