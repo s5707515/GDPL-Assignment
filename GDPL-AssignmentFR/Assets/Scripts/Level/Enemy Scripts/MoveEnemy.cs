@@ -30,7 +30,7 @@ public class MoveEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, checkPoints[pointer].position) > 0.1f) //If we're not close enough to next checkpoint
+        if (Vector3.Distance(transform.position, checkPoints[pointer].position) > 1.0f) //If we're not close enough to next checkpoint
         {
             //Move towards that checkpoint
 

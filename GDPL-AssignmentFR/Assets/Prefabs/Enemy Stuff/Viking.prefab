@@ -223,7 +223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 2
   smokeEffectPrefab: {fileID: 6086498306077068672, guid: f51e23573c162fa43813c189424a52a9, type: 3}
-  getUpSpeed: 5
 --- !u!114 &695338551116605640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +239,7 @@ MonoBehaviour:
   - {fileID: 6255239363569211382}
   - {fileID: 8538325824313813447}
   - {fileID: 7082562377786394538}
-  enemySpeed: 5
+  enemySpeed: 4
 --- !u!65 &8259799744310752572
 BoxCollider:
   m_ObjectHideFlags: 0
