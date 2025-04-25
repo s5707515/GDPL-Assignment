@@ -10,60 +10,61 @@ public class LaunchBall : MonoBehaviour
 
     [Header("References")]
 
-    [SerializeField] private GameObject ball;
 
-    [SerializeField] private Transform spawnPos;
+    [SerializeField] private GameObject ball;
+    
     [SerializeField] private Rigidbody ballRb;
 
     [SerializeField] private AimCannon cannonScript;
 
-
-
+    [SerializeField] private Transform spawnPos;
 
     private void Start()
     {
         ball.SetActive(false);
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void FireBall(Quaternion direction, float power)
     {
-        GameObject other = collision.gameObject;
+        //Reset forces
 
-        if(other.CompareTag("Enemy"))
-        {
-            HideBall();
-        }
-    }
-
-    //Fire ball from cannon with correct forces applied
-    public void FireBall(float yTilt, float zTilt, float power)
-    {
-        ball.SetActive(true);
+        ballRb.velocity = Vector3.zero;
+        ballRb.angularVelocity = Vector3.zero;
 
         ballRb.isKinematic = true;
 
-        //Reset properties
+        //Set balls position to infront of cannon
 
-        ballRb.velocity = Vector3.zero;
         ball.transform.position = spawnPos.position;
-        
+
+        //Rotate the ball to the correct trajectory
+
+        ball.transform.rotation = direction;
 
         ballRb.isKinematic = false;
 
-        ball.transform.rotation = Quaternion.Euler(0, -zTilt, yTilt);
+        //Debug.Log(ball.transform.rotation.eulerAngles.x);
+        //Debug.Log(ball.transform.rotation.eulerAngles.y);
+        //Debug.Log(ball.transform.rotation.eulerAngles.z);
 
-        ballRb.velocity = new Vector3(0, -zTilt, yTilt) * power;
+        ball.SetActive(true);
+
+        //fire the ball "forward" 
+
+        ballRb.velocity = -ball.transform.right * power;
     }
-
-    //Pooling with one item (effectively despawning the ball)
+  
+    //Pooling with one item (effectively despawning the ball until it is needed again)
 
     public void HideBall()
     {
-        cannonScript.ResetCannon();
+        cannonScript.ResetCannon(); //This resets the cannons rotation, removes the timer etc
 
         ball.SetActive(false);
     }
 
     
+
+
 }
 

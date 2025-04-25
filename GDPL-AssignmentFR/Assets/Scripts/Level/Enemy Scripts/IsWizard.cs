@@ -18,6 +18,8 @@ public class IsWizard : IsEnemy
         rb = GetComponent<Rigidbody>();
 
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
     }
     
 
@@ -35,6 +37,8 @@ public class IsWizard : IsEnemy
                 Destroy(gameObject);
 
             }
+
+            launchBallScript.HideBall();
         }
 
         

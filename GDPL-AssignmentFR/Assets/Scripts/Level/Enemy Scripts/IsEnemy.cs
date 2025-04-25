@@ -10,6 +10,9 @@ public class IsEnemy : MonoBehaviour
 
     protected GameManager gameManagerScript;
 
+    protected LaunchBall launchBallScript;
+
+
 
     protected bool quitting = false;
 
@@ -19,6 +22,8 @@ public class IsEnemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+            launchBallScript.HideBall();
+
             Destroy(gameObject);
         }
     }
@@ -27,6 +32,7 @@ public class IsEnemy : MonoBehaviour
     {
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
+        launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
      
     }
 

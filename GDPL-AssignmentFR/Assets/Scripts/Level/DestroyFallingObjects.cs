@@ -10,12 +10,14 @@ public class DestroyFallingObjects : MonoBehaviour
     {
         if(!collision.gameObject.CompareTag("Ball"))
         {
-            Destroy(collision.gameObject); 
+            Destroy(collision.gameObject);
         }
         else
         {
             launchBallScript.HideBall();
         }
+       
+        
     }
 
 

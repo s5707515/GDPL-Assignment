@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AimCannon : MonoBehaviour
@@ -12,10 +13,10 @@ public class AimCannon : MonoBehaviour
 
     [SerializeField] private float maxPower;
 
-    [Header("Cannon Attributes")]
+    [Header("Cannon Parts")]
 
     [SerializeField] private GameObject cannon;
-    [SerializeField] private GameObject cannonStand;
+    [SerializeField] private GameObject entireCannon;
 
     [Header("References")]
 
@@ -31,6 +32,10 @@ public class AimCannon : MonoBehaviour
     [SerializeField] private float timeSinceLaunch;
 
     [SerializeField] private float maxLaunchTime = 10f;
+
+    
+
+   
 
 
     bool projectileFired = false;
@@ -59,7 +64,13 @@ public class AimCannon : MonoBehaviour
         {
             arrow.SetActive(false); // Remove trajectory arrow
 
-            launchBallScript.FireBall(cannonStand.transform.rotation.y, cannon.transform.rotation.z, power);
+            // Get the Y rotation of the cannon stand 
+            float yRotation = entireCannon.transform.rotation.eulerAngles.y;
+
+            // Get the Z rotation of the aimable part
+            float zRotation = cannon.transform.rotation.eulerAngles.z;
+
+            launchBallScript.FireBall(Quaternion.Euler(0, yRotation,zRotation),power);
 
             projectileFired = true;
 
@@ -123,7 +134,7 @@ public class AimCannon : MonoBehaviour
         //Change rotation of object
 
         cannon.transform.rotation = Quaternion.Euler(0, rotation, elevation);
-        cannonStand.transform.rotation = Quaternion.Euler(0, rotation, 0);
+        entireCannon.transform.rotation = Quaternion.Euler(0, rotation, 0);
 
         //Change power of object
 

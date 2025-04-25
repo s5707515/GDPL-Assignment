@@ -11,6 +11,7 @@ TagManager:
   - Floating
   - Immovable
   - Cannon
+  - Pool
   layers:
   - Default
   - TransparentFX
