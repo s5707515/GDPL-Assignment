@@ -10,6 +10,11 @@ public class DestroyFallingObjects : MonoBehaviour
     {
         if(!collision.gameObject.CompareTag("Ball"))
         {
+            if(collision.gameObject.GetComponent<InformParentOnDestroy>() != null) //if the object is a fragment of a breakable build
+            {
+                collision.gameObject.GetComponent<InformParentOnDestroy>().DecreaseValueInParent();
+            }
+
             Destroy(collision.gameObject);
         }
         else

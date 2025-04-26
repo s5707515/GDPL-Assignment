@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,6 +18,10 @@ public class AimCannon : MonoBehaviour
 
     [SerializeField] private GameObject cannon;
     [SerializeField] private GameObject entireCannon;
+
+
+    [SerializeField] private Transform smokeSpawn;
+    [SerializeField] private GameObject smokePrefab;
 
     [Header("References")]
 
@@ -62,21 +67,7 @@ public class AimCannon : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && gameManagerScript.GetShotsLeft() > 0 && !projectileFired)
         {
-            arrow.SetActive(false); // Remove trajectory arrow
-
-            // Get the Y rotation of the cannon stand 
-            float yRotation = entireCannon.transform.rotation.eulerAngles.y;
-
-            // Get the Z rotation of the aimable part
-            float zRotation = cannon.transform.rotation.eulerAngles.z;
-
-            launchBallScript.FireBall(Quaternion.Euler(0, yRotation,zRotation),power);
-
-            projectileFired = true;
-
-            gameManagerScript.ChangeShots(-1); //Update UI
-
-            UIScript.ToggleTimeImage(true);
+            FireCannon();
         }
 
         //Increment time whilst the projectile is being launched
@@ -141,7 +132,29 @@ public class AimCannon : MonoBehaviour
         power = Mathf.Clamp(power + powerChange, 0, maxPower);
     }
 
-    public void ResetCannon() 
+    private void FireCannon() //Fire a ball from the cannon with correct trajectory
+    {
+        arrow.SetActive(false); // Remove trajectory arrow
+
+        // Get the Y rotation of the cannon stand 
+        float yRotation = entireCannon.transform.rotation.eulerAngles.y;
+
+        // Get the Z rotation of the aimable part
+        float zRotation = cannon.transform.rotation.eulerAngles.z;
+
+        launchBallScript.FireBall(Quaternion.Euler(0, yRotation, zRotation), power);
+
+        projectileFired = true;
+
+        gameManagerScript.ChangeShots(-1); //Update UI
+
+        UIScript.ToggleTimeImage(true);
+
+        //Spawn smoke at mouth of cannon
+        Instantiate(smokePrefab,smokeSpawn.position, smokeSpawn.rotation);
+    }
+
+    public void ResetCannon() //Reset the game back to aiming phase (called when the ball is hidden)
     {
         rotation = 0;
         elevation = 0;

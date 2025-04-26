@@ -14,8 +14,6 @@ public class IsEnemy : MonoBehaviour
 
 
 
-    protected bool quitting = false;
-
 
 
     protected virtual void OnCollisionEnter(Collision collision)
@@ -23,6 +21,12 @@ public class IsEnemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Ball"))
         {
             launchBallScript.HideBall();
+
+            //Spawn smoke cloud effect
+            Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
+
+            //Increment score
+            gameManagerScript.IncrementScore(score);
 
             Destroy(gameObject);
         }
@@ -33,31 +37,6 @@ public class IsEnemy : MonoBehaviour
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
-     
-    }
 
-    
-
-
-
-
-    protected virtual void OnDestroy()
-    {
-        if(!quitting)
-        {
-            //Spawn smoke cloud effect
-            Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
-
-            //Increment score
-            gameManagerScript.IncrementScore(score);
-        }
-       
-
-        Debug.Log("Object Destroyed");
-    }
-
-    protected void OnApplicationQuit()
-    {
-        quitting = true;
     }
 }

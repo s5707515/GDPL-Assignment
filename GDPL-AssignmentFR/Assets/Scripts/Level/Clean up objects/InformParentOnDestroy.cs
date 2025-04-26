@@ -4,26 +4,10 @@ using UnityEngine;
 
 public class InformParentOnDestroy : MonoBehaviour
 {
-
-    bool quitting = false;
-
-    private void Start()
+    public void DecreaseValueInParent()
     {
-        quitting = false;
-    }
-    private void OnDestroy()
-    {
-        if(!quitting) //Avoid error where OnDestroy is trying to find a parent during quit
-        {
-            GetComponentInParent<CheckIfAllChildrenAreDestroyed>().DecreaseChildCount();
-        }
-        
+        GetComponentInParent<CheckIfAllChildrenAreDestroyed>().DecreaseChildCount();
     }
 
-    private void OnApplicationQuit()
-    {
-        quitting = true;
-    }
-
-    
+    //This script might not be necessary.
 }

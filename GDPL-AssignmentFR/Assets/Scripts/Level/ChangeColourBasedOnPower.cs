@@ -26,6 +26,8 @@ public class ChangeColourBasedOnPower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Change the colour of the arrow based on the power value
+
         transition = Mathf.Clamp01((float)cannonScript.GetPower() / (float)cannonScript.GetMaxPower());
 
         mat.color = Color.Lerp(lowColour , highColour, transition);

@@ -34,7 +34,14 @@ public class IsWizard : IsEnemy
             else //Destroy the enemy
             {
 
-                Destroy(gameObject);
+                //Spawn smoke cloud effect
+                Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
+
+                //Increment score
+                gameManagerScript.IncrementScore(score);
+
+                //Destroy the holder object on defeat
+                Destroy(gameObject.transform.parent.gameObject);
 
             }
 
@@ -43,24 +50,7 @@ public class IsWizard : IsEnemy
 
         
     }
-    protected override void OnDestroy()
-    {
-        if (!quitting)
-        {
-            //Spawn smoke cloud effect
-            Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
-
-            //Increment score
-            gameManagerScript.IncrementScore(score);
-
-            //Destroy the holder object on defeat
-            Destroy(gameObject.transform.parent.gameObject);
-        }
-
-
-        Debug.Log("Object Destroyed");
-        
-    }
+   
 
     private void Teleport(Transform location) //Teleport the enemy to a new location
     {

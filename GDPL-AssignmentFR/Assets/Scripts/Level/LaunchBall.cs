@@ -43,10 +43,6 @@ public class LaunchBall : MonoBehaviour
 
         ballRb.isKinematic = false;
 
-        //Debug.Log(ball.transform.rotation.eulerAngles.x);
-        //Debug.Log(ball.transform.rotation.eulerAngles.y);
-        //Debug.Log(ball.transform.rotation.eulerAngles.z);
-
         ball.SetActive(true);
 
         //fire the ball "forward" 
