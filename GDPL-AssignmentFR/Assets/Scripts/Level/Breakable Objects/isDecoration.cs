@@ -10,19 +10,17 @@ public class isDecoration : MonoBehaviour
     [SerializeField] private float minForce = 1.0f;
 
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
-    void Update()
+
+    private void OnCollisionEnter(Collision collision)
     {
-        //Check if the object has been affected by a force and apply gravity to it
+        rb.isKinematic = false;
 
-        if(rb.velocity.magnitude > minForce)
-        {
-            rb.useGravity = true;
-
-            Destroy(this); //Destroy this instance of the script as it no longer needs to be used
-        }
+        Destroy(this); //Destroy the script as it is no longer necessary
     }
+    
+   
 }

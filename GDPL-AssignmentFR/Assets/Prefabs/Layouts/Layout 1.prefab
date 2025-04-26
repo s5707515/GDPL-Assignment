@@ -9768,8 +9768,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
+  m_UseGravity: 1
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -10440,6 +10440,14 @@ PrefabInstance:
     - target: {fileID: 1858384285354595548, guid: 1fd587de12eb7d04188d9a57cdd33c88, type: 3}
       propertyPath: m_Name
       value: CastleWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367407410835140534, guid: 1fd587de12eb7d04188d9a57cdd33c88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200375656604681269, guid: 1fd587de12eb7d04188d9a57cdd33c88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6499977
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
