@@ -214,6 +214,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 1
   smokeEffectPrefab: {fileID: 6086498306077068672, guid: f51e23573c162fa43813c189424a52a9, type: 3}
+  rubbleLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &4904707694539855101
 MonoBehaviour:
   m_ObjectHideFlags: 0

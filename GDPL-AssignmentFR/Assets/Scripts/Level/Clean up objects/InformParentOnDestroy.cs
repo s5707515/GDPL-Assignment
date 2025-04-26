@@ -9,5 +9,5 @@ public class InformParentOnDestroy : MonoBehaviour
         GetComponentInParent<CheckIfAllChildrenAreDestroyed>().DecreaseChildCount();
     }
 
-    //This script might not be necessary.
+    //After condesing my code, this script might not be necessary... 0-0
 }

@@ -246,6 +246,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 2
   smokeEffectPrefab: {fileID: 6086498306077068672, guid: f51e23573c162fa43813c189424a52a9, type: 3}
+  rubbleLayer:
+    serializedVersion: 2
+    m_Bits: 64
   tpSpot: {fileID: 3941863564533990764}
   wizardSmoke: {fileID: 3660022282152467, guid: 60188d604ed2d244d9b453af55386fab, type: 3}
 --- !u!65 &2875964368840583667

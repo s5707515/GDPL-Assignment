@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2698162023649789168}
   - component: {fileID: 477313985357499297}
   - component: {fileID: 4914864309389949118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 1343116863363776704}
   - component: {fileID: 2744858772839943965}
   - component: {fileID: 6790502915392969195}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797952002975471516}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bend (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 9144482618631325465}
   - component: {fileID: 8976068157008059041}
   - component: {fileID: 4169897621971128870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 1391648855403818547}
   - component: {fileID: 931342088107562155}
   - component: {fileID: 4921841859456472660}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2386046703857939407}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CastleTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 5810927406325618304}
   - component: {fileID: 7314181513080086954}
   - component: {fileID: 717190192998520262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8119111498281441953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bend (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 1814641643521325823}
   - component: {fileID: 5358132768057411562}
   - component: {fileID: 5009714999463289010}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 645973227027268942}
   - component: {fileID: 1871232650886701882}
   - component: {fileID: 4023553005040438882}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,7 +1425,7 @@ GameObject:
   - component: {fileID: 1639743663844683596}
   - component: {fileID: 9210441904689834080}
   - component: {fileID: 2009329513524710452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1576,7 +1576,7 @@ GameObject:
   - component: {fileID: 1078334905486431815}
   - component: {fileID: 7913132197627467906}
   - component: {fileID: 5950521722304648577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1722,7 +1722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1347995432436210887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1766,7 +1766,7 @@ GameObject:
   - component: {fileID: 278870464968694695}
   - component: {fileID: 5247498772170239208}
   - component: {fileID: 4922516421942833684}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1917,7 +1917,7 @@ GameObject:
   - component: {fileID: 9093306561244538120}
   - component: {fileID: 5296570471098260647}
   - component: {fileID: 14373100365506729}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 4533173462236785291}
   - component: {fileID: 1208426912794839684}
   - component: {fileID: 2071125966309892793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2214,7 +2214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2538565737599412928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2258,7 +2258,7 @@ GameObject:
   - component: {fileID: 8550676148942081118}
   - component: {fileID: 890285067498818472}
   - component: {fileID: 7729126452420924740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2409,7 +2409,7 @@ GameObject:
   - component: {fileID: 4293327529880817485}
   - component: {fileID: 3034175637522720791}
   - component: {fileID: 4076404107268928072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2560,7 +2560,7 @@ GameObject:
   - component: {fileID: 920285527452381333}
   - component: {fileID: 7513066228563364432}
   - component: {fileID: 8031038080656080950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2710,7 +2710,7 @@ GameObject:
   - component: {fileID: 8462736271462086405}
   - component: {fileID: 7218755510647781494}
   - component: {fileID: 1507087324281325032}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2860,7 +2860,7 @@ GameObject:
   - component: {fileID: 1616637007184396061}
   - component: {fileID: 3306221097931811026}
   - component: {fileID: 2752959818625284242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3010,7 +3010,7 @@ GameObject:
   - component: {fileID: 2870654685254362122}
   - component: {fileID: 806623411933708381}
   - component: {fileID: 4359193964247863713}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3161,7 +3161,7 @@ GameObject:
   - component: {fileID: 7105859070062159491}
   - component: {fileID: 7032309660884125272}
   - component: {fileID: 4410591872567957035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3312,7 +3312,7 @@ GameObject:
   - component: {fileID: 6211226949453440951}
   - component: {fileID: 8142267641875033725}
   - component: {fileID: 2260597317896577483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3463,7 +3463,7 @@ GameObject:
   - component: {fileID: 3427994857477457623}
   - component: {fileID: 6598723002192936744}
   - component: {fileID: 6789650859268617109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3614,7 +3614,7 @@ GameObject:
   - component: {fileID: 2977434184854851812}
   - component: {fileID: 7275891558009964467}
   - component: {fileID: 4413828147394511340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3764,7 +3764,7 @@ GameObject:
   - component: {fileID: 3439778637995493011}
   - component: {fileID: 2252789650579909445}
   - component: {fileID: 1722947523195632020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3915,7 +3915,7 @@ GameObject:
   - component: {fileID: 1984519135338723592}
   - component: {fileID: 2312493893284213069}
   - component: {fileID: 6257945565292171199}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4065,7 +4065,7 @@ GameObject:
   - component: {fileID: 6318891485571680583}
   - component: {fileID: 8033903187501016571}
   - component: {fileID: 7799617018904548651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4216,7 +4216,7 @@ GameObject:
   - component: {fileID: 5665986863800243186}
   - component: {fileID: 1881477681379185328}
   - component: {fileID: 5765953550762690949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4367,7 +4367,7 @@ GameObject:
   - component: {fileID: 1584120286731291697}
   - component: {fileID: 2129336637456051274}
   - component: {fileID: 1194441224892431760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4518,7 +4518,7 @@ GameObject:
   - component: {fileID: 4834621818173504248}
   - component: {fileID: 380198054264246684}
   - component: {fileID: 3718642924507588856}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4663,7 +4663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8593740995149784520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4707,7 +4707,7 @@ GameObject:
   - component: {fileID: 7363934548399203707}
   - component: {fileID: 3351949821316311693}
   - component: {fileID: 990192846501709716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4857,7 +4857,7 @@ GameObject:
   - component: {fileID: 953582092319168080}
   - component: {fileID: 6558974246780049587}
   - component: {fileID: 5027409762013513076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5003,7 +5003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4198387474239133797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5047,7 +5047,7 @@ GameObject:
   - component: {fileID: 9168422390277868326}
   - component: {fileID: 1970028588236242970}
   - component: {fileID: 3366142885975344853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5193,7 +5193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3957577390102962245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bend (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5231,7 +5231,7 @@ GameObject:
   - component: {fileID: 3357386393270660225}
   - component: {fileID: 5226525197998093543}
   - component: {fileID: 8963028063173635360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5417,7 +5417,7 @@ GameObject:
   - component: {fileID: 1106275554030834872}
   - component: {fileID: 5081957214278210873}
   - component: {fileID: 7309475983697535148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5615,7 +5615,7 @@ GameObject:
   - component: {fileID: 2820007699445691030}
   - component: {fileID: 6179244695619102483}
   - component: {fileID: 8428340573549142034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5766,7 +5766,7 @@ GameObject:
   - component: {fileID: 2293575561396475400}
   - component: {fileID: 2441123552463940838}
   - component: {fileID: 5318058882560702663}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5917,7 +5917,7 @@ GameObject:
   - component: {fileID: 8765874614695012448}
   - component: {fileID: 7305605462207850152}
   - component: {fileID: 4630651672453779689}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6063,7 +6063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 727362908142066345}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6107,7 +6107,7 @@ GameObject:
   - component: {fileID: 4171200979517565095}
   - component: {fileID: 8532644402523089610}
   - component: {fileID: 7995855866932073253}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6258,7 +6258,7 @@ GameObject:
   - component: {fileID: 8825387292083693528}
   - component: {fileID: 7790889187602281935}
   - component: {fileID: 373824126985911177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6404,7 +6404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1820902179113395784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turrets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6448,7 +6448,7 @@ GameObject:
   - component: {fileID: 2769647739708246267}
   - component: {fileID: 5896185323591815797}
   - component: {fileID: 2785465505282536417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6599,7 +6599,7 @@ GameObject:
   - component: {fileID: 7734514743339480637}
   - component: {fileID: 3105617696032662586}
   - component: {fileID: 4834935697113400998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6877,7 +6877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4752510599196054615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6916,7 +6916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1310930113320528725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6954,7 +6954,7 @@ GameObject:
   - component: {fileID: 751160340120069705}
   - component: {fileID: 2601669137237872649}
   - component: {fileID: 2587396832500443183}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7105,7 +7105,7 @@ GameObject:
   - component: {fileID: 3362452202353475752}
   - component: {fileID: 6366957216458613100}
   - component: {fileID: 3731888814186616011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7389,7 +7389,7 @@ GameObject:
   - component: {fileID: 1323630202646187330}
   - component: {fileID: 5052972381027775432}
   - component: {fileID: 3922521727746776424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7540,7 +7540,7 @@ GameObject:
   - component: {fileID: 1600392706656151983}
   - component: {fileID: 2927291768980974078}
   - component: {fileID: 568062770938051478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7691,7 +7691,7 @@ GameObject:
   - component: {fileID: 675396764598075205}
   - component: {fileID: 2442729534381366198}
   - component: {fileID: 3597240656171015422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7842,7 +7842,7 @@ GameObject:
   - component: {fileID: 5938239749430243290}
   - component: {fileID: 8910660924208588142}
   - component: {fileID: 5294209175256200187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7993,7 +7993,7 @@ GameObject:
   - component: {fileID: 9197519706613343880}
   - component: {fileID: 6428827159044074900}
   - component: {fileID: 4572720891047592876}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8144,7 +8144,7 @@ GameObject:
   - component: {fileID: 5356622406783793949}
   - component: {fileID: 7601346997798653667}
   - component: {fileID: 6642908416684172426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8295,7 +8295,7 @@ GameObject:
   - component: {fileID: 4385318761704940838}
   - component: {fileID: 413279925656322489}
   - component: {fileID: 8895656023466740760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8446,7 +8446,7 @@ GameObject:
   - component: {fileID: 6530513790918347570}
   - component: {fileID: 2227637955406112763}
   - component: {fileID: 3352586102528748149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8597,7 +8597,7 @@ GameObject:
   - component: {fileID: 1781213164040519832}
   - component: {fileID: 7233847518915882963}
   - component: {fileID: 3867623332155833984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8748,7 +8748,7 @@ GameObject:
   - component: {fileID: 1895603899574492079}
   - component: {fileID: 2988216141516550800}
   - component: {fileID: 8449750605302681740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8898,7 +8898,7 @@ GameObject:
   - component: {fileID: 1879177424642016904}
   - component: {fileID: 8478681494806298145}
   - component: {fileID: 9105003145850928539}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9049,7 +9049,7 @@ GameObject:
   - component: {fileID: 1092036392051273744}
   - component: {fileID: 8269094452931409934}
   - component: {fileID: 6574896239033991500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9199,7 +9199,7 @@ GameObject:
   - component: {fileID: 6592285488463856042}
   - component: {fileID: 5597578492122380476}
   - component: {fileID: 437990902080949150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9350,7 +9350,7 @@ GameObject:
   - component: {fileID: 9015413919786313221}
   - component: {fileID: 2001895114065810605}
   - component: {fileID: 8902291362975580718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9501,7 +9501,7 @@ GameObject:
   - component: {fileID: 1697232168924039909}
   - component: {fileID: 6544835469069525914}
   - component: {fileID: 2777910970901015321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9652,7 +9652,7 @@ GameObject:
   - component: {fileID: 5073310683070727884}
   - component: {fileID: 3340704668270812297}
   - component: {fileID: 3243266434131787945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Window
   m_TagString: Floating
   m_Icon: {fileID: 0}
@@ -9800,7 +9800,7 @@ GameObject:
   - component: {fileID: 5681333144127446637}
   - component: {fileID: 8163823968190014386}
   - component: {fileID: 4552515564118381751}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HalfWallBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9950,7 +9950,7 @@ GameObject:
   - component: {fileID: 301851120622544425}
   - component: {fileID: 5565229539303270754}
   - component: {fileID: 3496486533359405101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10101,7 +10101,7 @@ GameObject:
   - component: {fileID: 177368555822587153}
   - component: {fileID: 8529248689502424639}
   - component: {fileID: 8185667941213931304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10252,7 +10252,7 @@ GameObject:
   - component: {fileID: 2497139070171398849}
   - component: {fileID: 5608827108262240757}
   - component: {fileID: 6648085954504571248}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedBlock (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

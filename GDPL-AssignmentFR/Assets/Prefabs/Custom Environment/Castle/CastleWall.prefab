@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 210459076883540160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CastleWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4439483262452562108}
   - component: {fileID: 6392104558603513021}
   - component: {fileID: 8269646668963228200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfWallBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0019989014
@@ -306,6 +310,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,6 +377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25214
@@ -430,6 +442,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -493,6 +509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -554,6 +574,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -617,6 +641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -678,6 +706,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -741,6 +773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25214
@@ -802,6 +838,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -865,6 +905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfWallBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -926,6 +970,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -989,6 +1037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfWallBlock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1050,6 +1102,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1113,6 +1169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25214
@@ -1174,6 +1234,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,6 +1301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -1298,6 +1366,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1361,6 +1433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -1422,6 +1498,10 @@ PrefabInstance:
     - target: {fileID: 2044257889622269600, guid: 437e8fdf297497d4aac9f1fe09651d92, type: 3}
       propertyPath: m_Name
       value: Window (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044257889622269600, guid: 437e8fdf297497d4aac9f1fe09651d92, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3547910293729951325, guid: 437e8fdf297497d4aac9f1fe09651d92, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1485,6 +1565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfWallBlock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.2579994
@@ -1546,6 +1630,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1609,6 +1697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -1670,6 +1762,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1733,6 +1829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfWallBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.2579994
@@ -1794,6 +1894,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1857,6 +1961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -1918,6 +2026,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1981,6 +2093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25214
@@ -2042,6 +2158,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2105,6 +2225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -2166,6 +2290,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2229,6 +2357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfWallBlock (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.2319984
@@ -2290,6 +2422,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2353,6 +2489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -2414,6 +2554,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2477,6 +2621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25214
@@ -2538,6 +2686,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2601,6 +2753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007858276
@@ -2662,6 +2818,10 @@ PrefabInstance:
     - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_Name
       value: HalfWallBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2725,6 +2885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HalfWallBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1154891016974792923, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1967281312815522401, guid: d6c8ebc0b921c8143be2458a707815b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.2599983
@@ -2786,6 +2950,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2849,6 +3017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBlock (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25214
@@ -2910,6 +3082,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2973,6 +3149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window
       objectReference: {fileID: 0}
+    - target: {fileID: 2044257889622269600, guid: 437e8fdf297497d4aac9f1fe09651d92, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3547910293729951325, guid: 437e8fdf297497d4aac9f1fe09651d92, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6128578
@@ -3034,6 +3214,10 @@ PrefabInstance:
     - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_Name
       value: WallBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441411286028302856, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9110283398454239410, guid: dc12f053a15a67245837299e6505e6e0, type: 3}
       propertyPath: m_LocalPosition.x

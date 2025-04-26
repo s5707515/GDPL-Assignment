@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 2007368997441040062}
   - component: {fileID: 2601678737905767507}
   - component: {fileID: 7478353719730998863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 1241270731646649544}
   - component: {fileID: 6536417768859816927}
   - component: {fileID: 1053332345318596656}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1579,7 +1579,7 @@ GameObject:
   - component: {fileID: 1831609330175764213}
   - component: {fileID: 4634955876038857170}
   - component: {fileID: 3187183231564066943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2135,7 @@ GameObject:
   - component: {fileID: 643956985674325729}
   - component: {fileID: 6531891867600171474}
   - component: {fileID: 4166092596203189801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterWallBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3230,7 +3230,7 @@ GameObject:
   - component: {fileID: 2127755556611277516}
   - component: {fileID: 5556846408023008287}
   - component: {fileID: 8813119773061905306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterWallBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3520,7 +3520,7 @@ GameObject:
   - component: {fileID: 2673580077891891857}
   - component: {fileID: 1275823700747706220}
   - component: {fileID: 1859099623839644368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterWallBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4734,7 +4734,7 @@ GameObject:
   - component: {fileID: 7232204301709112295}
   - component: {fileID: 8102620380080581544}
   - component: {fileID: 7766143939203843856}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterWallBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4989,7 +4989,7 @@ GameObject:
   - component: {fileID: 8343333429943999345}
   - component: {fileID: 5014628005203192051}
   - component: {fileID: 1937023090992648067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterWallBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5272,7 +5272,7 @@ GameObject:
   - component: {fileID: 707997802344857210}
   - component: {fileID: 470265889615228495}
   - component: {fileID: 6286382763094357283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterWallBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5422,7 +5422,7 @@ GameObject:
   - component: {fileID: 2393456483219393150}
   - component: {fileID: 2214521249352117492}
   - component: {fileID: 4943954343025946768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5672,7 +5672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8482539348654440117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiniWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5841,7 +5841,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5033867959204042935}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiniWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

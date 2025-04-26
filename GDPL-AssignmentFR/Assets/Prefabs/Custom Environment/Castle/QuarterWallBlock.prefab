@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8538052143995157339}
   - component: {fileID: 4636054231334849673}
   - component: {fileID: 3333137876523144333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterWallBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

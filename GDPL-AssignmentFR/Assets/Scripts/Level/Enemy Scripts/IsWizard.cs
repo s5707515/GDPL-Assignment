@@ -11,15 +11,14 @@ public class IsWizard : IsEnemy
 
     [SerializeField] protected GameObject wizardSmoke;
 
-    private Rigidbody rb;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
+
+        rb = GetComponent<Rigidbody>();
     }
     
 
