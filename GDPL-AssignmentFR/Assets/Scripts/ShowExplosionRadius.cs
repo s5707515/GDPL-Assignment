@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ShowExplosionRadius : MonoBehaviour
 {
+    [SerializeField] bool showRadius = true;
     [SerializeField] private Explosive tnt;
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        if (showRadius)
+        {
+            Gizmos.color = Color.red;
 
-        Gizmos.DrawSphere(tnt.GetCentre().position, tnt.GetRadius());
+            Gizmos.DrawSphere(tnt.GetCentre().position, tnt.GetRadius());
+        }
+       
     }
 }

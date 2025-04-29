@@ -8,6 +8,8 @@ public class Explosive : MonoBehaviour
 
     [SerializeField] private float explosionRadius;
 
+    [SerializeField] private ParticleSystem smokePrefab;
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -39,6 +41,7 @@ public class Explosive : MonoBehaviour
            
             
         }
+        Instantiate(smokePrefab, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }
