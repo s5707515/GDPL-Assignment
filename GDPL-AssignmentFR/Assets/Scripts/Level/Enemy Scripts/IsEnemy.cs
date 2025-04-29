@@ -39,16 +39,21 @@ public class IsEnemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            launchBallScript.HideBall();
-
-            //Spawn smoke cloud effect
-            Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
-
-            //Increment score
-            gameManagerScript.IncrementScore(score);
-
-            Destroy(gameObject);
+            IsDefeated();
         }
+    }
+
+    public void IsDefeated()
+    {
+        launchBallScript.HideBall();
+
+        //Spawn smoke cloud effect
+        Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
+
+        //Increment score
+        gameManagerScript.IncrementScore(score);
+
+        Destroy(gameObject);
     }
 
     private void Start()

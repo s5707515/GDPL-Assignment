@@ -156,8 +156,8 @@ public class AimCannon : MonoBehaviour
 
     public void ResetCannon() //Reset the game back to aiming phase (called when the ball is hidden)
     {
-        rotation = 0;
-        elevation = 0;
+        //rotation = 0;
+        //elevation = 0;
 
         timeSinceLaunch = 0;
 

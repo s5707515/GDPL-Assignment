@@ -7,8 +7,6 @@ public class isDecoration : MonoBehaviour
 {
     private Rigidbody rb;
 
-    [SerializeField] private float minForce = 1.0f;
-
 
     void Awake()
     {

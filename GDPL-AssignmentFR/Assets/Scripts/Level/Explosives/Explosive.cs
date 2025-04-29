@@ -10,12 +10,19 @@ public class Explosive : MonoBehaviour
 
     [SerializeField] private ParticleSystem smokePrefab;
 
+     private LaunchBall launchBallScript;
 
+    private void Start()
+    {
+        launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
+        
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Ball"))
         {
             CreateExplosion();
+            launchBallScript.HideBall();
         }
     }
 
@@ -31,8 +38,11 @@ public class Explosive : MonoBehaviour
 
             if (otherRb != null)
             {
-          
-                if (!otherRb.gameObject.CompareTag("Ball")) // Make ball immune to explosion
+                if(otherRb.gameObject.CompareTag("Enemy")) //Kill all enemies in range
+                {
+                    otherRb.gameObject.GetComponent<IsEnemy>().IsDefeated();
+                }
+                else if (!otherRb.gameObject.CompareTag("Ball")) // Make ball immune to explosion
                 {
                     otherRb.AddExplosionForce(explosionPower, transform.position, explosionRadius, 0.1f, ForceMode.Impulse);
                 }

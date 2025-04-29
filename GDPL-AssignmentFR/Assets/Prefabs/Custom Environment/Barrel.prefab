@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.37
+      value: 17.53
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.363332
+      value: 12.38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 103.5
+      value: 97.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -102,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6da1c125d62a6343bbc4381a69efdae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showRadius: 0
   tnt: {fileID: 2052820897048294996}
 --- !u!114 &2052820897048294996
 MonoBehaviour:
@@ -115,8 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca01fb3647ef68478db5570c7effd73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPower: 30
+  explosionPower: 25
   explosionRadius: 8
+  smokePrefab: {fileID: 5800249150475017963, guid: f17ee6e0eb5783a4290fc01b47dca7a6, type: 3}
 --- !u!54 &562362733504053470
 Rigidbody:
   m_ObjectHideFlags: 0

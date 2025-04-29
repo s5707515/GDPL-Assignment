@@ -20,7 +20,6 @@ public class IsWizard : IsEnemy
 
         rb = GetComponent<Rigidbody>();
     }
-    
 
     protected override void OnCollisionEnter(Collision collision)
     {
@@ -46,9 +45,10 @@ public class IsWizard : IsEnemy
 
             launchBallScript.HideBall();
         }
-
-        
     }
+
+
+    
    
 
     private void Teleport(Transform location) //Teleport the enemy to a new location
