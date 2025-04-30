@@ -12,6 +12,7 @@ TagManager:
   - Immovable
   - Cannon
   - Pool
+  - Audio
   layers:
   - Default
   - TransparentFX

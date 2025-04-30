@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.53
+      value: 39.35483
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.38
+      value: 16.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 97.5
+      value: 41.099854
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dce56594d739f3439814ee8450072e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -123,6 +123,8 @@ MonoBehaviour:
   explosionPower: 25
   explosionRadius: 8
   smokePrefab: {fileID: 5800249150475017963, guid: f17ee6e0eb5783a4290fc01b47dca7a6, type: 3}
+  audioManagerScript: {fileID: 0}
+  explosionSFX: {fileID: 8300000, guid: 986d6b30567e30e428f3f21373fe45ca, type: 3}
 --- !u!54 &562362733504053470
 Rigidbody:
   m_ObjectHideFlags: 0

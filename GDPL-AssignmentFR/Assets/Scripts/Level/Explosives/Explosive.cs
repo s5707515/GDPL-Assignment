@@ -10,12 +10,16 @@ public class Explosive : MonoBehaviour
 
     [SerializeField] private ParticleSystem smokePrefab;
 
+    private ManageAudio audioManagerScript;
+
+    [SerializeField] private AudioClip explosionSFX;
+
      private LaunchBall launchBallScript;
 
     private void Start()
     {
         launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
-        
+        audioManagerScript = GameObject.FindGameObjectWithTag("Audio").GetComponent<ManageAudio>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -51,7 +55,10 @@ public class Explosive : MonoBehaviour
            
             
         }
+
         Instantiate(smokePrefab, transform.position, Quaternion.identity);
+
+        audioManagerScript.PlaySFX(explosionSFX);
 
         Destroy(gameObject);
     }

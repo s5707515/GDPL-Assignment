@@ -23,11 +23,14 @@ public class AimCannon : MonoBehaviour
     [SerializeField] private Transform smokeSpawn;
     [SerializeField] private GameObject smokePrefab;
 
+    [SerializeField] private AudioClip cannonSFX;
+
     [Header("References")]
 
     [SerializeField] private GameManager gameManagerScript;
     [SerializeField] private GameUI UIScript;
     [SerializeField] private LaunchBall launchBallScript;
+    [SerializeField] private ManageAudio audioManagerScript;
 
     [SerializeField] private GameObject arrow;
 
@@ -152,6 +155,8 @@ public class AimCannon : MonoBehaviour
 
         //Spawn smoke at mouth of cannon
         Instantiate(smokePrefab,smokeSpawn.position, smokeSpawn.rotation);
+
+        audioManagerScript.PlaySFX(cannonSFX);
     }
 
     public void ResetCannon() //Reset the game back to aiming phase (called when the ball is hidden)
