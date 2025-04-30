@@ -13,6 +13,10 @@ public class IsEnemy : MonoBehaviour
 
     protected LaunchBall launchBallScript;
 
+    protected ManageAudio audioManagerScript;
+
+    [SerializeField] protected AudioClip dingSFX;
+
     protected Rigidbody rb;
 
     bool getUpQueued = false;
@@ -22,6 +26,8 @@ public class IsEnemy : MonoBehaviour
     [SerializeField] private int delay = 3;
 
     [SerializeField] private float standUpTime = 1.5f;
+
+
 
 
     protected void Update()
@@ -50,6 +56,10 @@ public class IsEnemy : MonoBehaviour
         //Spawn smoke cloud effect
         Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
 
+        //Play SFXw
+
+        audioManagerScript.PlaySFX(dingSFX);
+
         //Increment score
         gameManagerScript.IncrementScore(score);
 
@@ -61,6 +71,8 @@ public class IsEnemy : MonoBehaviour
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
+
+        audioManagerScript = GameObject.FindGameObjectWithTag("Audio").GetComponent<ManageAudio>();
 
         rb = gameObject.GetComponent<Rigidbody>();
 

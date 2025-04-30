@@ -223,9 +223,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 2
   smokeEffectPrefab: {fileID: 6086498306077068672, guid: f51e23573c162fa43813c189424a52a9, type: 3}
-  rubbleLayer:
-    serializedVersion: 2
-    m_Bits: 64
+  dingSFX: {fileID: 8300000, guid: 23ab272e3ba25450ea31f566494ac12b, type: 3}
+  delay: 3
+  standUpTime: 1.5
 --- !u!114 &695338551116605640
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,15 +11,8 @@ public class IsWizard : IsEnemy
 
     [SerializeField] protected GameObject wizardSmoke;
 
+    [SerializeField] private AudioClip tpSFX;
 
-    private void Start()
-    {
-        gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-
-        launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
-
-        rb = GetComponent<Rigidbody>();
-    }
 
     protected override void OnCollisionEnter(Collision collision)
     {
@@ -34,6 +27,10 @@ public class IsWizard : IsEnemy
 
                 //Spawn smoke cloud effect
                 Instantiate(smokeEffectPrefab, transform.position, transform.rotation);
+
+                //Play SFX
+
+                audioManagerScript.PlaySFX(dingSFX);
 
                 //Increment score
                 gameManagerScript.IncrementScore(score);
@@ -61,6 +58,7 @@ public class IsWizard : IsEnemy
 
         Instantiate(wizardSmoke, transform.position, transform.rotation);
 
+        audioManagerScript.PlaySFX(tpSFX);
 
         hasTeleported = true;
 
