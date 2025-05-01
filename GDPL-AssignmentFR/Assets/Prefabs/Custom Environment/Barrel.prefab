@@ -120,9 +120,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca01fb3647ef68478db5570c7effd73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPower: 150
-  explosionRadius: 7
+  explosionPower: 25
+  explosionRadius: 8
   smokePrefab: {fileID: 5800249150475017963, guid: f17ee6e0eb5783a4290fc01b47dca7a6, type: 3}
+  audioManagerScript: {fileID: 0}
   explosionSFX: {fileID: 8300000, guid: 986d6b30567e30e428f3f21373fe45ca, type: 3}
 --- !u!54 &562362733504053470
 Rigidbody:
