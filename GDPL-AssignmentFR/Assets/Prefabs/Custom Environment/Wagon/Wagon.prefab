@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brokenVersion: {fileID: 976117406510664615, guid: 7c87072816b59b444a8c52ec4f1e84e2, type: 3}
-  breakForce: 10
+  breakForce: 5
   collisionMultiplier: 25
   isBroken: 0
 --- !u!1001 &699531723074660183

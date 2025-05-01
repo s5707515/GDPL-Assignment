@@ -48,7 +48,7 @@ public class Explosive : MonoBehaviour
                 }
                 else if (!otherRb.gameObject.CompareTag("Ball")) // Make ball immune to explosion
                 {
-                    otherRb.AddExplosionForce(explosionPower, transform.position, explosionRadius, 0.1f, ForceMode.Impulse);
+                    otherRb.AddExplosionForce(explosionPower, transform.position, explosionRadius, 0, ForceMode.Impulse);
                 }
                 
             }
