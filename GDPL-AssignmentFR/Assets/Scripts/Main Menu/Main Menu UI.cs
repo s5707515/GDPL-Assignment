@@ -6,36 +6,71 @@ using UnityEngine.UI;
 
 public class MainMenuUI : MonoBehaviour
 {
-    
 
-    [SerializeField] private GameObject menuButtons;
+    [Header("Menus:")]
 
-   
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject instructionsMenu;
+    [SerializeField] private GameObject controlsMenu;
+    [SerializeField] private GameObject enemiesMenu;
 
-    [SerializeField] private GameObject instructionImages;
 
 
-    private void Start()
-    {
-        instructionImages.SetActive(false);
-    }
     public void QuitGame()
     {
         Debug.Log("Quitting...");
         Application.Quit();
     }
 
-    public void DisplayInstructions()
+
+    public void SwitchMenu(int transitionID) //Method called by buttons to switch which UI menu is on screen
     {
-        menuButtons.SetActive(false);
-        instructionImages.SetActive(true);
-        
+        switch(transitionID)
+        {
+            case 0: //Main Menu -> Instructions
+
+                MenuToMenu(mainMenu, instructionsMenu);
+                break;
+
+            case 1: //Instructions -> Main Menu
+
+                MenuToMenu(instructionsMenu, mainMenu);
+                break;
+
+            case 2: //Instructions -> Controls
+
+                MenuToMenu(instructionsMenu, controlsMenu);
+                break;
+
+            case 3: //Controls -> Instructions
+
+                MenuToMenu(controlsMenu, instructionsMenu);
+                break;
+
+            case 4: //Instructions -> Enemies
+
+                MenuToMenu(instructionsMenu, enemiesMenu);
+                break;
+
+            case 5: //Enemies -> Instructions
+
+                MenuToMenu(enemiesMenu, instructionsMenu);
+                break;
+
+            default:
+
+                Debug.Log("TransitionID: " + transitionID + "is N/A!!");
+
+                break;
+
+
+        }
     }
 
-    public void DisplayMainMenu()
+    public void MenuToMenu(GameObject startMenu, GameObject endMenu)
     {
-        instructionImages.SetActive(false);
-        menuButtons.SetActive(true);
+        startMenu.SetActive(false);
+        endMenu.SetActive(true);
     }
 
     
