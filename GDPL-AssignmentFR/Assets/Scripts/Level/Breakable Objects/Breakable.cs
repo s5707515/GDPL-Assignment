@@ -31,7 +31,7 @@ public class Breakable : MonoBehaviour
 
             var rbs = brokenObject.GetComponentsInChildren<Rigidbody>();
 
-            foreach(var rb in rbs)
+            foreach(var rb in rbs) 
             {
                 rb.AddExplosionForce(collision.relativeVelocity.magnitude * collisionMultiplier, collision.contacts[0].point, 2);
             }

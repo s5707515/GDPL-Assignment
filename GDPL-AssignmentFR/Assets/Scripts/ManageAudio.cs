@@ -17,7 +17,7 @@ public class ManageAudio : MonoBehaviour
 
         bkgSource.Play();
     }
-    public void PlaySFX(AudioClip sfx)
+    public void PlaySFX(AudioClip sfx) //Plays sound effect
     {
         SFXSource.PlayOneShot(sfx);
     }

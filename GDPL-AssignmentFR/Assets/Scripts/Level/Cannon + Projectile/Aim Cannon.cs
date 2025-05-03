@@ -59,6 +59,8 @@ public class AimCannon : MonoBehaviour
 
     private bool shiftDown = false;
 
+    private bool gameEnd = false;
+
 
     private void Start()
     {
@@ -66,54 +68,65 @@ public class AimCannon : MonoBehaviour
     }
     private void Update()
     {
-        //Launch a ball when space is pressed
+        //Disable cannon controls on GameEnd
 
-        if(Input.GetKeyDown(KeyCode.Space) && gameManagerScript.GetShotsLeft() > 0 && !projectileFired)
+        if(gameManagerScript.GetWin() == true || gameManagerScript.GetLose() == true)
         {
-            FireCannon();
+            gameEnd = true;
         }
 
-        //Increment time whilst the projectile is being launched
-
-
-        if (projectileFired)
+        if(!gameEnd)
         {
-            timeSinceLaunch += Time.deltaTime;
+            //Launch a ball when space is pressed
+
+            if (Input.GetKeyDown(KeyCode.Space) && gameManagerScript.GetShotsLeft() > 0 && !projectileFired)
+            {
+                FireCannon();
+            }
+
+            //Increment time whilst the projectile is being launched
+
+
+            if (projectileFired)
+            {
+                timeSinceLaunch += Time.deltaTime;
+            }
+
+            //Hide projectile after time limit expires
+
+            if (timeSinceLaunch > maxLaunchTime)
+            {
+                launchBallScript.HideBall();
+            }
+
+
+            //Change angle of launch by pressing A and D
+
+            yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 5 * Time.deltaTime;
+
+            //Change Elevation of the ball by pressing W and S
+
+            zTilt = Input.GetAxis("Vertical") * rotationSpeed * 5 * Time.deltaTime;
+
+
+            //Change power of the ball using SHIFT scroll wheel
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            {
+                shiftDown = true;
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                shiftDown = false;
+            }
+
+            if (shiftDown)
+            {
+                powerChange = Input.GetAxis("Mouse ScrollWheel") * 10;
+            }
         }
-
-        //Hide projectile after time limit expires
-
-        if(timeSinceLaunch > maxLaunchTime)
-        {
-            launchBallScript.HideBall();
-        }
-
-
-        //Change angle of launch by pressing A and D
-
-        yTilt = Input.GetAxis("Horizontal") * rotationSpeed * 5 * Time.deltaTime;
-
-        //Change Elevation of the ball by pressing W and S
-
-        zTilt = Input.GetAxis("Vertical") * rotationSpeed * 5 * Time.deltaTime;
-
-
-        //Change power of the ball using SHIFT scroll wheel
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
-        {
-            shiftDown = true;
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            shiftDown = false;
-        }
-
-        if (shiftDown)
-        {
-            powerChange = Input.GetAxis("Mouse ScrollWheel") * 10;
-        }
+        
     }
 
     private void LateUpdate()

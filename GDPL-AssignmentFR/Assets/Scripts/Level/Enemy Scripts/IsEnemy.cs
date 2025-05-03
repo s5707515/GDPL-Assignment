@@ -41,7 +41,7 @@ public class IsEnemy : MonoBehaviour
             
         }
     }
-    protected virtual void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision) //Check if hit by cannonball
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
@@ -49,7 +49,7 @@ public class IsEnemy : MonoBehaviour
         }
     }
 
-    public void IsDefeated()
+    public void IsDefeated() //Played when the enemy is killed
     {
         launchBallScript.HideBall();
 
@@ -68,6 +68,8 @@ public class IsEnemy : MonoBehaviour
 
     private void Start()
     {
+        //Find scripts
+
         gameManagerScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         launchBallScript = GameObject.FindGameObjectWithTag("Pool").GetComponent<LaunchBall>();
@@ -102,7 +104,7 @@ public class IsEnemy : MonoBehaviour
             yield return null;
         }
 
-        //Make sure the enemy stands up
+        //Make sure the enemy back stands up fully
 
         transform.rotation = uprightRotation;
         Debug.Log("Enemy Stood Back Up!");

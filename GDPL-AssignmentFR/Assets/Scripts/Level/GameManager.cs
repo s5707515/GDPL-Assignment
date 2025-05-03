@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         shotsLeft = 10;
 
-        //Load layouts on Island
+        //Load enemy layouts on Island
 
         for(int count = 0; count < layoutSpawns.Length; count++)
         {
@@ -52,43 +52,43 @@ public class GameManager : MonoBehaviour
    
 
 
-    public int GetRemainingEnemies() 
+    public int GetRemainingEnemies() //Used by the UI
     {
         return enemiesLeft;
     }
 
-    public void ChangeShots(int _shotsleft)
+    public void ChangeShots(int _shotsleft) //Used by AimCannon are firing a shot
     {
         shotsLeft += _shotsleft;
     }
 
-    public int GetShotsLeft()
+    public int GetShotsLeft()//Used by the UI
     {
         return shotsLeft;
     }
 
-    public void IncrementScore(int _score)
+    public void IncrementScore(int _score) //Called by Enemies on defeat
     {
         score += _score;
     }
 
-    public int GetScore()
+    public int GetScore()//Used by the UI
     {
         return score;
     }
 
   
-    public bool GetLose()
+    public bool GetLose()//Used by the UI
     {
         return lose;
     }    
 
-    public bool GetWin()
+    public bool GetWin()//Used by the UI
     {
         return win;
     }
 
-    public IEnumerator CheckForWinOrLose(float delay)
+    public IEnumerator CheckForWinOrLose(float delay)//Called by AimCannon after each shot has finished
     {
         yield return new WaitForSeconds(delay);
 

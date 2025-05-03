@@ -16,14 +16,14 @@ public class MainMenuUI : MonoBehaviour
 
 
 
-    public void QuitGame()
+    public void QuitGame() //Close the game
     {
         Debug.Log("Quitting...");
         Application.Quit();
     }
 
 
-    public void SwitchMenu(int transitionID) //Method called by buttons to switch which UI menu is on screen
+    public void SwitchMenu(int transitionID) //Method called by buttons to switch which UI menu is on screen 
     {
         switch(transitionID)
         {
@@ -67,7 +67,7 @@ public class MainMenuUI : MonoBehaviour
         }
     }
 
-    public void MenuToMenu(GameObject startMenu, GameObject endMenu)
+    public void MenuToMenu(GameObject startMenu, GameObject endMenu) //Switch which UI submenu is active
     {
         startMenu.SetActive(false);
         endMenu.SetActive(true);

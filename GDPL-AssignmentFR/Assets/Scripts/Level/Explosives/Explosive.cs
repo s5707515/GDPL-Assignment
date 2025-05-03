@@ -32,11 +32,14 @@ public class Explosive : MonoBehaviour
 
 
 
-    private void CreateExplosion()
+    private void CreateExplosion() 
     {
+
+        //Find nearby objects
+
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
 
-        foreach(Collider collider in colliders)
+        foreach(Collider collider in colliders) //Apply a force to each object
         {
             Rigidbody otherRb = collider.GetComponent<Rigidbody>();
 
@@ -63,7 +66,7 @@ public class Explosive : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public Transform GetCentre()
+    public Transform GetCentre() //Useful for gizmos.
     {
         return transform;
     }
